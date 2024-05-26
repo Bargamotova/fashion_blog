@@ -3,9 +3,10 @@
   "version": "2.1.0",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
-  "homepage": "https://bargamotova.github.io/",
+  "homepage": "https://bargamotova.github.io/fashion_blog",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
+    "deploy": "gh-pages -d app",
     "dev": "gulp",
     "build": "gulp build",
     "cache": "gulp cache",
