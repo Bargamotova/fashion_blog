@@ -1,0 +1,21 @@
+.btn {
+  background: transparent;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "^";
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    pointer-events: none;
+    &::after {
+      position: absolute;
+      content: none;
+    }
+  }
+}

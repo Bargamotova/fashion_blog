@@ -1,0 +1,22 @@
+.aside {
+  &__item {
+    padding-bottom: 70px;
+    @media only screen and (min-width: 1440px) {
+      width: 270px;
+      margin: 0 auto;
+    }
+    &--flex {
+      // display: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media only screen and (min-width: 1440px) {
+        display: block;
+      }
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

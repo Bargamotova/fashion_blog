@@ -1,0 +1,30 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "typografy";
+
+// подключения компонентов страницы
+@import "./mixins/burger";
+@import "./components/header";
+@import "./components/overlay";
+@import "./components/main";
+@import "./components/hero";
+@import "./components/blog";
+@import "./components/aside";
+@import "./components/pagination";
+@import "./components/about";
+@import "./components/post";
+@import "./components/categories";
+@import "./components/sotial";
+@import "./components/tags";
+@import "./components/follow";
+@import "./components/btn";
+@import "./components/dropdown";
+
+@import "./components/articles";
+@import "./components/icons";
+@import "./components/svg";
+@import "./components/nav";
+@import "./components/footer";

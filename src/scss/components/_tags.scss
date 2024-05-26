@@ -1,0 +1,15 @@
+.tags {
+  width: 270px;
+  // margin: 0 auto;
+  padding-bottom: 0;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__item {
+    background: #f8f9fa;
+    padding: 6px 15px;
+    cursor: pointer;
+  }
+}

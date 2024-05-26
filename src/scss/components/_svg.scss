@@ -1,0 +1,69 @@
+.icon {
+  fill: #666;
+  transition: all 0.3s;
+
+  &-facebook {
+    width: 9px;
+    height: 16px;
+  }
+  &-google {
+    width: 20px;
+    height: 13px;
+  }
+  &-instagram {
+    width: 17px;
+    height: 17px;
+  }
+  &-pinterest {
+    width: 13px;
+    height: 16px;
+  }
+  &-twitter {
+    width: 16px;
+    height: 13px;
+  }
+  &-behance {
+    width: 18px;
+    height: 11px;
+  }
+}
+.sotial__icon {
+  fill: #666;
+  transition: all 0.3s;
+  &--facebook {
+    width: 11px;
+    height: 20px;
+  }
+  &--pinterest {
+    width: 15px;
+    height: 20px;
+  }
+  &--vimeo {
+    width: 20px;
+    height: 18px;
+  }
+  &--dribbble {
+    width: 20px;
+    height: 20px;
+  }
+  &--twitter {
+    width: 20px;
+    height: 17px;
+  }
+  &--behance {
+    width: 20px;
+    height: 13px;
+  }
+  &--instagram {
+    width: 20px;
+    height: 20px;
+  }
+  &--youtube {
+    width: 16px;
+    height: 20px;
+  }
+  &--google {
+    width: 22px;
+    height: 14px;
+  }
+}

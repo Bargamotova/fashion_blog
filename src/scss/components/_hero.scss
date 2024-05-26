@@ -1,0 +1,39 @@
+.hero {
+  --header-top: 100px;
+  margin-top: var(--header-top);
+  background-color: var(--clr-default);
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - var(--header-top));
+
+  padding-bottom: 60px;
+  display: grid;
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__container {
+    align-self: end;
+  }
+  &__content {
+    max-width: 560px;
+  }
+  &__subtitle-link {
+    margin: 0;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

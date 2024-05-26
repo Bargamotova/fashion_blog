@@ -1,0 +1,27 @@
+.icons {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+    transition: all 0.3s;
+    &:hover {
+      background: var(--clr-accent);
+      & > .icons__link .icon {
+        fill: white;
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

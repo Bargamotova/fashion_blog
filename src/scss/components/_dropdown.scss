@@ -1,0 +1,19 @@
+.dropdown {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out,
+    height 0.2s ease-in-out;
+  &--active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  @media only screen and (min-width: 1024px) {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+}

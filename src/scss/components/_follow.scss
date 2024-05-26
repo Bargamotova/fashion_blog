@@ -1,0 +1,56 @@
+.follow {
+  padding-bottom: 30px;
+  @media only screen and (min-width: 600px) {
+    padding-bottom: 80px;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    background: transparent;
+    transition: all 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, var(--clr-accent), #fff);
+    transition: all 0.3s;
+    border: 1px solid var(--clr-accent);
+  }
+
+  &__container {
+    max-width: 98vw;
+  }
+  &__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    gap: 21px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+
+    @media only screen and (min-width: 1880px) {
+      justify-content: center;
+      scroll-snap-type: none;
+      overflow-x: visible;
+      overflow-y: visible;
+    }
+  }
+
+  &__item {
+    flex: none;
+    scroll-snap-align: start;
+    text-align: center;
+    @media only screen and (min-width: 1880px) {
+      flex: 0 1 auto;
+    }
+  }
+}

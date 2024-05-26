@@ -1,0 +1,21 @@
+.blog {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media only screen and (min-width: 600px) {
+    padding-bottom: 80px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media only screen and (min-width: 1440px) {
+      flex-direction: row;
+      gap: 130px;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+}

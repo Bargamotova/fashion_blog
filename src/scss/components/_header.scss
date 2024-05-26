@@ -1,0 +1,21 @@
+.header {
+  padding: 34px 5vw;
+  background: var(--clr-white);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  @media only screen and (min-width: 1024px) {
+    padding: 17px 5vw;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    z-index: 51;
+  }
+}
